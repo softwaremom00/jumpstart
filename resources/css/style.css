@@ -9,19 +9,17 @@ body { padding-top: 70px; }
 nav li {
   list-style: none;
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Open Sans';
   text-align: left;
   color: black;
 }
 
-.navbar .navbar-default .navbar-fixed-top{
-
-}
-
 .navbar-default .navbar-nav > .active > a{
-  color: blue;
+  color: #399bd1;
   background-color: inherit;
   margin-left: 1rem;
 }
@@ -40,7 +38,7 @@ nav li a{
   text-decoration: none;
 }
 nav li:first-child a{
-  color: blue;
+  color: #399bd1;
 }
 nav li a:hover{
   text-decoration: none;
@@ -61,6 +59,7 @@ nav li a:hover{
   font-family: 'Monoton';
   color: white;
   text-align: center;
+  margin-top: 11.85rem;
 }
 
 .jumbotron p{
@@ -73,6 +72,7 @@ nav li a:hover{
   border-radius: 10px;
   padding: 1.5rem 2rem;
   margin-left: 32rem;
+  margin-bottom: 11.85;
 }
 
 .btn-primary:hover{
@@ -82,18 +82,43 @@ nav li a:hover{
 .btn-primary:active{
 
 }
-.featured-project img{
+.featured-project .image-container{
   width: 50%;
-
+}
+.featured-project img{
+  width: 100%;
+  padding-right: 1rem;
 }
 /* add media query for small devices set width to 100% */
 
 @media only screen and (max-width: 600px){
-  .featured-project img{
+  .featured-project .image-container{
     width: 100%;
   }
 }
 
 .image-container img {
   opacity: 0.7;
+}
+
+.featured-project-cont{
+  display: flex;
+  flex-direction: row;
+  padding-right: 1rem;
+}
+.featured-project h2{
+  font-size: 2rem;
+  color: blue;
+}
+.featured-project-cont h3{
+  font-size: 1.5rem;
+}
+
+.documentary-text{
+  width: 25%;
+  padding-right: 1rem;
+}
+
+.product-categores{
+  width: 25%;
 }
