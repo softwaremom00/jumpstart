@@ -1,0 +1,99 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Monoton', cursive;
+  font-size: 16px;
+}
+body { padding-top: 70px; }
+
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+  color: black;
+}
+
+.navbar .navbar-default .navbar-fixed-top{
+
+}
+
+.navbar-default .navbar-nav > .active > a{
+  color: blue;
+  background-color: inherit;
+  margin-left: 1rem;
+}
+
+.navbar-default .navbar-nav > .active > a:hover{
+  background-color: inherit;
+}
+
+.navbar-default .navbar-nav .navbar-brand{
+
+}
+
+
+nav li a{
+  color: black;
+  text-decoration: none;
+}
+nav li:first-child a{
+  color: blue;
+}
+nav li a:hover{
+  text-decoration: none;
+}
+
+.jumbotron-bike{
+  background-image: url("../images/jumbotron-bike.jpg");
+  background-position:center;
+  background-size: cover;
+  color: white;
+  height: 30rem;
+  width: auto;
+
+}
+
+
+.jumbotron-bike h1{
+  font-family: 'Monoton';
+  color: white;
+  text-align: center;
+}
+
+.jumbotron p{
+  text-align: center;
+}
+
+.btn-primary{
+  margin-top: 5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-left: 32rem;
+}
+
+.btn-primary:hover{
+    box-shadow: 5px 5px 5px 0px black;
+}
+
+.btn-primary:active{
+
+}
+.featured-project img{
+  width: 50%;
+
+}
+/* add media query for small devices set width to 100% */
+
+@media only screen and (max-width: 600px){
+  .featured-project img{
+    width: 100%;
+  }
+}
+
+.image-container img {
+  opacity: 0.7;
+}
