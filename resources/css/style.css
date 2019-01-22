@@ -125,12 +125,8 @@ nav li a:hover{
 }
 
 .documentary-text{
-  /*width: 25%; */
-  padding-right: 1rem;
-}
 
-.product-categories{
-  /*width: 25%;*/
+  padding-right: 1rem;
 }
 
 .product-categories li{
@@ -140,6 +136,13 @@ nav li a:hover{
   text-align: left;
 }
 
+.projects .image-container img{
+  width: 95%;
+}
+
+.projects p{
+  max-width: 95%;
+}
 
 .bottom-banner{
   text-align: center;
