@@ -12,8 +12,9 @@ nav li {
   margin-top: 0;
   margin-left: 1rem;
   font-size: 1.1rem;
-  font-weight: bold;
-  font-family: 'Open Sans';
+  font-weight: bold;      /* Redline spec*/
+  font-weight: bold;      /* Redline spec*/
+  font-family: 'Open Sans';   /* Redline spec*/
   text-align: left;
   color: black;
 }
@@ -49,29 +50,35 @@ nav li a:hover{
   background-position:center;
   background-size: cover;
   color: white;
-  height: 30rem;
-  width: auto;
+ /* ISSUE may need height */
 
 }
 
 
 .jumbotron-bike h1{
   font-family: 'Monoton';
+  font-size: 7.1rem;
   color: white;
   text-align: center;
   margin-top: 11.85rem;
 }
 
-.jumbotron p{
+.jumbotron-bike p{
+  margin-left: 30rem;   /* seems like this should be a centering property*/
   text-align: center;
+  width: 51.3rem;
+}
+.center-block {
+  float:none;
 }
 
 .btn-primary{
+  text-align: center;
   margin-top: 5rem;
   font-size: 1rem;
   border-radius: 10px;
   padding: 1.5rem 2rem;
-  margin-left: 32rem;
+
   margin-bottom: 11.85;
 }
 
@@ -119,6 +126,12 @@ nav li a:hover{
   padding-right: 1rem;
 }
 
-.product-categores{
+.product-categories{
   width: 25%;
 }
+
+.product-categories li{
+  font-size: 1rem;
+}
+
+/*** ISSUE: Add media query for
