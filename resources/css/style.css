@@ -13,7 +13,6 @@ nav li {
   margin-left: 1rem;
   font-size: 1.1rem;
   font-weight: bold;      /* Redline spec*/
-  font-weight: bold;      /* Redline spec*/
   font-family: 'Open Sans';   /* Redline spec*/
   text-align: left;
   color: black;
@@ -89,8 +88,9 @@ nav li a:hover{
 .btn-primary:active{
 
 }
+
 .featured-project .image-container{
-  width: 50%;
+  /* width: 50%; */
 }
 .featured-project img{
   width: 100%;
@@ -108,30 +108,41 @@ nav li a:hover{
   opacity: 0.7;
 }
 
-.featured-project-cont{
-  display: flex;
-  flex-direction: row;
+.featured-project-cont, .projects{
   padding-right: 1rem;
+  margin-left: 3rem;
 }
-.featured-project h2{
-  font-size: 2rem;
-  color: blue;
+.featured-project  h2, .projects h2{
+
+  margin-bottom: 1.25rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #399bd1;
 }
+
 .featured-project-cont h3{
   font-size: 1.5rem;
 }
 
 .documentary-text{
-  width: 25%;
+  /*width: 25%; */
   padding-right: 1rem;
 }
 
 .product-categories{
-  width: 25%;
+  /*width: 25%;*/
 }
 
 .product-categories li{
   font-size: 1rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
 }
 
-/*** ISSUE: Add media query for
+
+.bottom-banner{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
