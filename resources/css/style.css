@@ -46,24 +46,37 @@ nav li a:hover{
 
 .jumbotron-bike{
   background-image: url("../images/jumbotron-bike.jpg");
+}
+.jumbotron-thinking-bottles{
+    background-image: url("../images/jumbotron-beer.jpg");
+}
+
+.jumbotron-start-bag{
+    background-image: url("../images/jumbotron-duffel.jpg");
+}
+.jumbotron-create-flowers{
+    background-image: url("../images/jumbotron-flowers.jpg");
+}
+
+.jumbotron{
   background-position:center;
   background-size: cover;
   color: white;
- /* ISSUE may need height */
-
 }
 
-
-.jumbotron-bike h1{
+.jumbotron h1{
   font-family: 'Monoton';
   font-size: 7.1rem;
   color: white;
   text-align: center;
   margin-top: 11.85rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.jumbotron-bike p{
-  margin-left: 30rem;   /* seems like this should be a centering property*/
+.jumbotron p{
+
+   margin-left: auto;
+   margin-right: auto;
   text-align: center;
   width: 51.3rem;
 }
@@ -83,26 +96,51 @@ nav li a:hover{
 
 .btn-primary:hover{
     box-shadow: 5px 5px 5px 0px black;
+
 }
 
 .btn-primary:active{
 
 }
 
-.featured-project .image-container{
-  /* width: 50%; */
-}
+
 .featured-project img{
   width: 100%;
   padding-right: 1rem;
 }
 /* add media query for small devices set width to 100% */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1200px){
+
   .featured-project .image-container{
     width: 100%;
   }
+
+.jumbotron h1{
+  font-size: 5.7rem; /* Redline Spec */
 }
+.jumbotron p{
+  width: 41.3rem;
+}
+
+}
+@media only screen and (max-width: 770px){
+
+ .navbar-brand{
+   display: none;
+ }
+
+ .navbar-default .navbar-nav > .active > a{
+
+   margin-left: 0;
+ }
+ .jumbotron p{
+
+   width: 100%;
+ }
+
+}  /* end of media query */
+
 .image-container{
   overflow:hidden;
 }
@@ -121,7 +159,7 @@ nav li a:hover{
 
 .featured-project-cont, .projects{
   padding-right: 1rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 .featured-project  h2, .projects h2{
 
@@ -156,7 +194,43 @@ nav li a:hover{
 }
 
 .bottom-banner{
+
   text-align: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  background-color: #f3f3f3;
+}
+
+@media only screen and (max-width: 800px){
+
+  .projects {
+
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+
+
+.projects .image-container .container-fluid{
+
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+  .projects .image-container img{
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+
+
 }
